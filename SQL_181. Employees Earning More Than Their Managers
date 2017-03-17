@@ -1,0 +1,5 @@
+SELECT Employee.name AS Employee
+FROM Employee 
+INNER JOIN Employee as M
+ON Employee.ManagerID = M.Id
+WHERE Employee.salary > M.salary;
